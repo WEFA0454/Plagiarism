@@ -1,15 +1,15 @@
 import{createWebHashHistory}from 'vue-router'
 import app from '../App.vue'
 import { createRouter } from "vue-router"
+import SubmitVue from '../views/SubmitCode/Submit.vue'
 
 
 const routes = [
 
     {path:'/',component:app},
     {
-        path: '/Login',
-        name: 'Login',
-        component: () => import('../views/Login/index.vue')
+        path: '/',
+        component: SubmitVue
     }
 ]
 const router =  createRouter({
