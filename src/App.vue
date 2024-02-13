@@ -1,10 +1,12 @@
-<script setup lang="ts">
-</script>
-
 <template>
   <div class="查重系统">
     <title>查重系统</title>
   </div>
+  <p>查重系统</p>
+  <!-- 使用 router-link 添加按钮跳转至 /submit -->
+  <router-link to="/submit">
+      <button>Go to Submit</button>
+    </router-link>
   <router-view></router-view>
 </template>
 

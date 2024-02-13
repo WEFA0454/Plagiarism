@@ -1,13 +1,18 @@
-import{createWebHashHistory}from 'vue-router'
-import app from '../App.vue'
-import { createRouter } from "vue-router"
+import { createRouter, createWebHistory } from 'vue-router';
+import Submit from '../views/SubmitCode/Submit.vue'
 
 const routes = [
-    {path:'/',component:app},
-]
-const router =  createRouter({
-    history:createWebHashHistory(),
-    routes,
-})
+  {
+    path: '/submit',
+    name: 'Submit',
+    component: Submit
+  },
+  // 其他路由配置...
+];
 
-export default router
+const router = createRouter({
+  history: createWebHistory(),
+  routes
+});
+
+export default router;
