@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
     "target": "ES2020",
     "useDefineForClassFields": true,
     "module": "ESNext",
@@ -13,6 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
+    "jsxImportSource": "vue",
 
     /* Linting */
     "strict": true,

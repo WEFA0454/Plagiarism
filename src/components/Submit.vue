@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import fetch from '../utils/axios'
 export default{
     methods:{
         //处理文件选择事件
@@ -36,7 +37,7 @@ export default{
         // 将文件添加到 FormData 中
         formData.append('file', files[0]);
         // 使用Axios或其他工具发送文件到服务器
-        axios.post('/api/upload-folder', formData)
+        fetch.post('downLoad', formData)
             .then(response => {
             // 处理服务器返回的结果
             console.log(response.data);
