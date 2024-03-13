@@ -16,13 +16,17 @@
   </div>
 </template>
 <style scoped>
+
+html,body {
+  margin: 0;/*没效果 */
+  background-color: #f3f3f3;
+}
 .查重系统 {
   width: 100%;
   margin: 0;
   padding: 0;
   background-color: #f3f3f3;
 }
-
 .header {
   width: 100%; /* 使用百分比单位，100% 表示整个页面宽度 */
   margin:0;
@@ -41,7 +45,7 @@
 }
 .bjtulogo {
   height: 65px;
-  width: 20%;
+  width: 28%;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -56,6 +60,8 @@
   font-size: 20px;
   font-weight: bold;
 }
+.home:hover{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 鼠标悬停时显示阴影 */}
 .chachong{
   border:none;
   outline: none;
@@ -64,5 +70,8 @@
   color: #075fae;
   font-size: 20px;
   font-weight: bold;
+}
+.chachong:hover{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 鼠标悬停时显示阴影 */
 }
 </style>
