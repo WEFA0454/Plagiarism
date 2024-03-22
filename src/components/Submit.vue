@@ -41,6 +41,11 @@ export default{
             .then(response => {
             // 处理服务器返回的结果
             console.log(response.data);
+            if(response.status=='200'){
+                this.$router.push({ 
+                path: '/Result', 
+                query: { data: JSON.stringify(response.data)}});
+            }
             })
             .catch(error => {
             // 处理上传过程中的错误
